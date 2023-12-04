@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="heading">
+            <h1>Bug Finder</h1>
+            <input type="text"  placeholder="Enter Target Name" name="" id="target">
+        </div>
+        <div id="2nd">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div id="box" >
+                        <img src="https://cdn0.iconfinder.com/data/icons/job-seeker/256/folder_job_seeker_employee_unemployee_work-512.png" alt="">
+                        <button onclick="performSearch('Directory')">Directory Listing</button>
+                        <img  src="https://cdn0.iconfinder.com/data/icons/business-startup-10/50/36-512.png" alt="">
+                        <button onclick="performSearch('Configuration')">Configuration Files</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/database-512.png" alt="">
+                        <button onclick="performSearch('Database')">Database Files</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/wordpress-512.png" alt="">
+                        <button onclick="performSearch('Wordpress')">Wordpress</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/data-analytics-volume-2/512/LOG_FILE-512.png" alt="">
+                        <button onclick="performSearch('Log')">Log Files</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/modern-technologies-3/128/Modern_technologies57-512.png" alt="">
+                        <button onclick="performSearch('Backup')">Backup and Old Files</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn1.iconfinder.com/data/icons/user-113/24/glyph_lock_login_user_permissions_profile_seo_and_web_web_page_padlock_avatar-64.png" alt="">
+                        <button onclick="performSearch('Login')">Login Pages</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/programming-50/64/206_programming-sql-data-database-512.png" alt="">
+                        <button onclick="performSearch('SQL')">SQL Errors</button>
+                        <img  src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/apache-512.png" alt="">
+                        <button onclick="performSearch('Apache')">Apache Config Files</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn2.iconfinder.com/data/icons/funtime-objects-part-1/60/005_008_robot_baby_friend_gift_present_samodelkin-512.png" alt="">
+                        <button onclick="performSearch('Robots')">Robots .txt file</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/webina-seo-development-and-marketing/128/seo_web-93-512.png" alt="">
+                        <button onclick="performSearch('Eye')">Domain Eye</button>
+                        <img  src="https://cdn1.iconfinder.com/data/icons/neliku-office/128/yumminky-neliku-office-13-512.png" alt="">
+                        <button onclick="performSearch('Publicly')">Publicly Exposed Documents</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn4.iconfinder.com/data/icons/web-design-and-development-100/512/Icon_Project-15-512.png" alt="">
+                        <button onclick="performSearch('PHP')">PHP info()</button>
+                        <img  src="https://cdn0.iconfinder.com/data/icons/cyber-security-24/64/backdoor-system-computing-authentication-512.png" alt="">
+                        <button onclick="performSearch('Backdoors')">Findind Backdoors</button>
+                        <img  src="https://cdn0.iconfinder.com/data/icons/monoflat-series-04/324/mobile-app-firmware-install-phone-program-update-application-512.png" alt="">
+                        <button onclick="performSearch('Install')">Install / Setup Files</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn0.iconfinder.com/data/icons/mobile-shop/512/data-sharing-file-computer-phone-512.png" alt="">
+                        <button onclick="performSearch('Redirects')">Open Redirects</button>
+                        <img  src="https://cdn3.iconfinder.com/data/icons/snowish/128x128/apps/apacheconf.png" alt="">
+                        <button onclick="performSearch('STRUTS')">Apache STRUTS RCE</button>
+                        <img  src="https://cdn3.iconfinder.com/data/icons/network-and-communications-8/32/network_social_media_marketing-512.png" alt="">
+                        <button onclick="performSearch('Party')">3rd Party Exposure</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn2.iconfinder.com/data/icons/privacy-policy-1/512/privacy-policy-security-data-19-512.png" alt="">
+                        <button onclick="performSearch('Check')">Check Security Headers</button>
+                        <img  src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png" alt="">
+                        <button onclick="performSearch('GitLab')">GitLab</button>
+                        <img  src="https://pastebin.com/themes/pastebin/img/pastebin_logo_side_outline_support_ukraine.webp" alt="">
+                        <button onclick="performSearch('Pastebin')">Find Pastebin Entires</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn3.iconfinder.com/data/icons/social-round-corner/512/linkdin__social_media_logo-512.png" alt="">
+                        <button onclick="performSearch('Linkdin')">Employees on Linkdin</button>
+                        <img  src="https://cdn4.iconfinder.com/data/icons/detective-filled-outline/512/folder_information_archive_Privacy_detective_document_Secrets_Confidential_security_file-512.png" alt="">
+                        <button onclick="performSearch('Htacess')">.htacess sensitive files</button>
+                        <img  src="https://cdn1.iconfinder.com/data/icons/webina-seo-development-and-marketing/128/seo_web_2-44-512.png" alt="">
+                        <button onclick="performSearch('Subdomains')">find Subdomains</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn1.iconfinder.com/data/icons/aami-web-internet/64/aami2-97-512.png" alt="">
+                        <button onclick="performSearch('Sub-Subdomains')">Find Sub-Subdomains</button>
+                        <img  src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/wordpress-512.png" alt="">
+                        <button onclick="performSearch('Find-Wordpress')">Find Wordpress #2</button>
+                        <img  src="https://cdn1.iconfinder.com/data/icons/brands-jolly/220/bitbucket-social-network-brand-logo-512.png" alt="">
+                        <button onclick="performSearch('Bitbucket')">Search in Bitbucket and Atlassian</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn0.iconfinder.com/data/icons/social-media-and-logos-11/32/logo_stackoverflow_Stack_overflow-512.png" alt="">
+                        <button onclick="performSearch('Stackoverflow')">Search in Stackoverflow</button>
+                        <img  src="https://cdn0.iconfinder.com/data/icons/programming-web-1/512/Backup_clock_clockwise_counter_machine_time_wayback_icon-512.png" alt="">
+                        <button onclick="performSearch('Wordpress-Wayback')">Find Wordpress wayback machine</button>
+                        <img  src="https://cdn1.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/quarters-2-64.png" alt="">
+                        <button onclick="performSearch('Passive')">Passive Total</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn1.iconfinder.com/data/icons/picons-social/57/github-512.png" alt="">
+                        <button onclick="performSearch('Github')">search in github</button>
+                        <img  src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_4357dd9bb894bc70c2220d88f348ac8b/open-bug-bounty.png" alt="">
+                        <button onclick="performSearch('openbugbounty')">search in openbugbounty</button>
+                        <img  src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-512.png" alt="">
+                        <button onclick="performSearch('reddit')">search in reddit</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn3.iconfinder.com/data/icons/file-extension-11/512/html-file-extension-format-digital-64.png" alt="">
+                        <button onclick="performSearch('cross-domian')">test cross domian</button>
+                        <img  src="https://cdn0.iconfinder.com/data/icons/zephyr-people/256/001_006_hacker_alert_threat_laptop-64.png" alt="">
+                        <button onclick="performSearch('threatcrowd')">check in threatcrowd</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/file-and-document-42/64/git-file-format-document-512.png" alt="">
+                        <button onclick="performSearch('git-folder')">git folder</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-64.png" alt="">
+                        <button onclick="performSearch('youtube')">youtube</button>
+                        <img  src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/89_Digital_Ocean-64.png" alt="">
+                        <button onclick="performSearch('digital')">digital Ocean Spaces</button>
+                        <img  src="https://cdn4.iconfinder.com/data/icons/CS5/48/document_swf_file_document.png" alt="">
+                        <button onclick="performSearch('google')">Find .SWF file (google)</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn4.iconfinder.com/data/icons/address-book-providers-in-colors/512/yandex_en-512.png" alt="">
+                        <button onclick="performSearch('Yandex')">find .SWF file (Yandex)</button>
+                        <img  src="https://cdn0.iconfinder.com/data/icons/time-organizing/512/xxx001-64.png" alt="">
+                        <button onclick="performSearch('SWFWayback')">search SWF in Wayback</button>
+                        <img  src="https://cdn0.iconfinder.com/data/icons/time-organizing/512/xxx001-64.png" alt="">
+                        <button onclick="performSearch('Wayback-Machine2')">Search in WAyback MAchine #2</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn0.iconfinder.com/data/icons/time-organizing/512/xxx001-64.png" alt="">
+                        <button onclick="performSearch('Wayback-Machine3')">Search in Wayback Machine #3</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/whcompare-blue-green-web-hosting-1/516/dedicated-ip-64.png" alt="">
+                        <button onclick="performSearch('Reverse')">Reverse IP Lookup</button>
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAMAAADUt/MJAAAANlBMVEVHcEweVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNUeVNWH06/4AAAAEnRSTlMAWvTAFDDp/5gGq94hd4pnRs62wicfAAAA3klEQVR4AW2SiQ7DIAxDw+mVhuv/f3ZoGsLZ+nThKgXbIBvnQ5RHUsbiJf9cBbi1AnDyw+fjHklCqAfa3voGymX+Ckd1APVIZ+ULyMNIf6ROINSmXxmXpHjDY5GeTx1YVA4oQnaBKKIj7oA06Nw3uGmLBrEA26DBAKAI+Z2R9ih9LxvnNHA/muFP62pqXgJ+C3s9CYt8fHfZxABkP3Wtas/km5tXLKZaR1QDyPhNuytgbFyF4sfuJhAu8x6bjU2y2n6aldN4iIHsFiBHIcaO2U0TfK2Jm2CKbcKi8zzcN2pQCrelP+2jAAAAAElFTkSuQmCC" alt="">
+                        <button onclick="performSearch('Traefik')">Traefik</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn0.iconfinder.com/data/icons/server-it-2/64/05-Cloud_storage-64.png" alt="">
+                        <button onclick="performSearch('Cloud-Storage')">cloud Storage and buckets</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/amazon-aws-stencils/100/Storage__Content_Delivery_Amazon_S3_Bucket_with_Objects-64.png" alt="">
+                        <button onclick="performSearch('S3-Buckets')">s3 Buckets</button>
+                        <img  src="https://cdn2.iconfinder.com/data/icons/web-design-and-development-47/258/5-64.png" alt="">
+                        <button onclick="performSearch('Source-Code')">Source Code Publice WWW</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://search.censys.io/static/img/icon.png" alt="">
+                        <button onclick="performSearch('CENSYS-ip4')">Check in CENSYS ip4</button>
+                        <img  src="https://search.censys.io/static/img/icon.png" alt="">
+                        <button onclick="performSearch('CENSYS-domain')">Check in CENSYS domain</button>
+                        <img  src="https://cdn4.iconfinder.com/data/icons/blue-common-symbols-vol-1/1045/certificate_certification_certs_license_app_mobile-64.png" alt="">
+                        <button onclick="performSearch('CENSYS-CERTS')">Check in CENSYS CERTS</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADAklEQVR4AV2TA5AcQRSGu5JS7JQdp1xxsh6uEdu2bdu2naxxtm1z73K28dJz3vurxtPf09/oJ6tBf0glsgppZBKzyMYj0F9aiYx8craPhP0erluWEizXhjp4xLGfpGLwF9ki1PfoBFBKZMYAvYAaYJ4nQkYeScatWl9X8vY9VNocUPb9J+ScOAXeEvbPZ1Y3sB9Ai35JZMPc5wqPBso0vsFyTViESucs/fIVmvLygFNbfT1UWO2Qtm0XGIT0kq8yHfou1XIHBhCK4f6U3Dfv8jUo//0HyvUGKHz6DCo9PKGvmvLzIfs4zkJEPzcJKGTBGXMHsgvoK87rN6EuKgraGuoB2tuhPikZykwWF0B9ahqk7dgN3kL6iQkvNIuYTkCYenFsud6IFzdAX1V4eOHDE9rx+6Z8J+TgDGO0i8EoljI/cOp63LevsoUIxSxZ4Sw3Wzoi91V1SCikbt8FGYePQ+Lq9RDDKMB7Dj/2q0g68YN8MTKQCvRCtxqhQEblXfjoCTQXFroACp6/hFj1IghfIIKkTdsg8+QZyDx1tj1x/ZYmdzH79q9YOvolB7DyiBXJ6zdDwf1HUOUfADWRUeB8/BQSlq2CcL4Ess5d6GhoQ2oqNKSlQaXdAXnnLoKvhLW8UK0YhvSEDLnxiBNR2sXNSSvXQuKSFRAt17QFzOUXpGzb1V7t5w9tjY3QrfaW1o6RpuKRWgT0PmTEAAMhRwYBPd0uoHY7ROx5M5/k2fjUBeetO9gL+dBfjbl5kHX6LIQKiB8cAB8YgI/f2NI/aTX6IFuM7ITsTsHtu9CEe9NfzUVFkHn0BIQLCIML4C/uLLcPvmOnmQXU+syDR6AGT6O/Krx8IAlPxpdPPHYB/OEyYDmLYquSyvFhyoXZ+dduQHVgELTV1Xd4BTe6w1CRtLz6r0S+wLUEStmzST7jWeuFDBOp1FWkYz9kYRtnHDgCSUtXcoubflOqVS90a5BrBn0A3PGbViG9iJnsKaQeBJLS8EAJG+UpYl5ZBdTMd6rl6N7yLeg/HAlnBN3ei8EAAAAASUVORK5CYII=" alt="">
+                        <button onclick="performSearch('SHODAN')">Search in SHODAN</button>
+                        <img  src="https://cdn1.iconfinder.com/data/icons/DarkGlass_Reworked/128x128/mimetypes/source_s.png" alt="">
+                        <button onclick="performSearch('Share-Point')">CVE-2020-0646 Share Point RCE</button>
+                        <img  src="https://cdn1.iconfinder.com/data/icons/30-seo-web-development-flat-icons-part-1/218/API-64.png" alt="">
+                        <button onclick="performSearch('WSDL')">API Endpoints WSDL</button>
+                    </div>
+                    <div id="box" >
+                        <img  src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-64.png" alt="">
+                        <button onclick="performSearch('Github-GIST')">Github GIST Search</button>
+                        <img  src="https://cdn4.iconfinder.com/data/icons/debt-flaticon/64/logs-business_and_finance-records-tick-documents-record-file_-64.png" alt="">
+                        <button onclick="performSearch('CT-logs')">Search in CT logs</button>
+                        <img  src="https://cdn1.iconfinder.com/data/icons/computer-technology-57/62/computer-login-password-security-access-64.png" alt="">
+                        <button onclick="performSearch('Password-Leak')">Plain text Password Leak</button>
+                    </div>
+                    <div id="box" >
+                        <img style="width: 50px; padding: 0px 5px 0px 5px;;" src="https://cdn0.iconfinder.com/data/icons/mobile-app-development-soft-fill/60/Mobile-CMS-content-management-system-64.png" alt="">
+                        <button onclick="performSearch('CMS')">What CMS?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="background-color: cadetblue; display: flex; justify-content:center; padding-top: 15px;">
+            <p style="font-size: 150%;">Contact US:</p>
+            <a href="https://wa.me/+918929796276"><img src="https://img.icons8.com/?size=48&id=16713&format=png" alt=""></a>
+            <p style="font-size: 150%;">Follow:</p>
+            <a href="https://www.youtube.com/@errorcode0101"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/395_Youtube_logo-64.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/sanjayofficial00/"><img src="https://img.icons8.com/?size=48&id=13930&format=png" alt=""></a>
+            <a href="https://github.com/sanjayofficial00/sanjayofficial00"><img src="https://img.icons8.com/?size=48&id=bVGqATNwfhYq&format=png" alt=""></a>
+        </div>
+        <div id="name" style="background-color: cadetblue; justify-content: center; display: flex; padding-bottom: 10px;">
+            <p>***Sanjay Kumar***</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
