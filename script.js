@@ -118,7 +118,7 @@ function performSearch(searchType) {
     } else if (searchType === "Password-Leak") {
         searchQuery = "https://www.google.com/search?q=site:throwbin.io%20" + encodedUrl + "%2f";            
     } else if (searchType === "CMS") {
-        searchQuery = "https://whatcms.org/?s=" + encodedUrl + "%2f";            
+        searchQuery = "https://whatcms.org/?s=" + encodedUrl;            
     }
 
     let newtab = window.open(searchQuery, '_blank');
